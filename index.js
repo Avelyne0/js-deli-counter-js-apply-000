@@ -16,7 +16,15 @@ function nowServing(line) {
   return `Currently serving ${line.shift()}.`
 }
 
-function takeANumber(line, name) {
-  line.push(name)
-  return `Welcome, ${name}. You are number ${line.length} in line.`
+// function takeANumber(line, name) {
+//   line.push(name)
+//   return `Welcome, ${name}. You are number ${line.length} in line.`
+// }
+
+let counter = 0
+
+function takeANumber(){
+  counter++
+  return `Can number ${counter} come get their sandwich.`
+  line.push(counter)
 }
